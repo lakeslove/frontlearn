@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>菜鸟教程(runoob.com)</title>
+</head>
+<body>
+
+<p>局部变量计数。</p>
+<button type="button" onclick="add.plus()">计数!</button>
+<p id="demo">0</p>
+<script>
+    var counters = {
+        counter : 0,
+        add : function() {
+            console.log(this);
+            return this.counter += 1;
+        }
+    }
+    var person = {
+        firstName: "John",
+        lastName : "Doe",
+        id     : 5566,
+        fullName : function() {
+            console.log(this);
+            return this.firstName + " " + this.lastName;
+        }
+    };
+
+    function myFunction(){
+        document.getElementById("demo").innerHTML = counters.add() + "";
+    }
+
+    function add() {
+        var counter = 0;
+        function plus() {counter += 1;}
+        plus();
+        document.getElementById("demo").innerHTML = counter;
+    }
+</script>
+
+</body>
+</html>

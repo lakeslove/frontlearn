@@ -1,0 +1,90 @@
+{
+    "name": "front-3",
+    "version": "3.5.1-beta",
+    "private": true,
+    "scripts": {
+        "serve": "cross-env NODE_ENV=development vue-cli-service serve --open",
+        "build": "cross-env NODE_ENV=production vue-cli-service build --progress",
+        "build:fanzhayun": "cross-env vue-cli-service build --mode fanzhayun",
+        "build:henan": "cross-env vue-cli-service build --mode henan",
+        "lint": "eslint src/**/*",
+        "start": "npm run serve"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "babel-loader": "^8.2.5",
+        "babel-register": "^6.26.0",
+        "clipboard": "^2.0.11",
+        "core-js": "^2.6.5",
+        "cross-env": "^7.0.3",
+        "driver.js": "^1.3.1",
+        "echarts": "4.9.0",
+        "element-ui": "^2.15.9",
+        "html2canvas": "^1.0.0-alpha.12",
+        "jquery": "^3.6.0",
+        "js-md5": "^0.7.3",
+        "lodash": "^4.17.10",
+        "moment": "^2.24.0",
+        "node-xlsx": "^0.23.0",
+        "nprogress": "^0.2.0",
+        "pubsub-js": "^1.7.0",
+        "qs": "^6.5.2",
+        "request": "^2.88.2",
+        "sortablejs": "^1.15.0",
+        "v-charts": "^1.19.0",
+        "vue": "^2.6.10",
+        "vue-class-component": "^6.0.0",
+        "vue-clipboard2": "^0.2.1",
+        "vue-cookie": "^1.1.4",
+        "vue-drag-resize": "^1.5.4",
+        "vue-property-decorator": "^7.0.0",
+        "vue-router": "^3.1.3",
+        "vue-seamless-scroll": "^1.1.23",
+        "vue2-ace-editor": "^0.0.14",
+        "vuedraggable": "^2.16.0",
+        "vuejs-paginate": "^2.1.0",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.11.0",
+        "@vue/cli-service": "^3.11.0",
+        "babel-plugin-component": "^1.1.1",
+        "cross-env": "^7.0.3",
+        "eslint": "^8.48.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-import-resolver-alias": "^1.1.2",
+        "eslint-plugin-import": "^2.28.1",
+        "eslint-plugin-vue": "^9.17.0",
+        "mockjs": "^1.0.1-beta3",
+        "postcss": "^8.4.27",
+        "postcss-html": "^1.5.0",
+        "prettier": "3.3.2",
+        "sass-loader": "^7.0.1",
+        "stylelint": "^15.10.3",
+        "stylelint-config-html": "^1.1.0",
+        "stylelint-config-recess-order": "^4.3.0",
+        "stylelint-config-recommended": "^13.0.0",
+        "stylelint-config-recommended-vue": "^1.5.0",
+        "stylelint-config-standard": "^34.0.0",
+        "stylelint-config-standard-scss": "^10.0.0",
+        "uglifyjs-webpack-plugin": "^2.0.1",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "optionalDependencies": {
+        "node-sass": "4.14.1"
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "engines": {
+        "node": ">= 14.18.0"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
+}

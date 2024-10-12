@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>菜鸟教程</title>
+<!--    <meta http-equiv="refresh" content="5">-->
+</head>
+<body>
+<pre>
+    html重要的：table、div布局、form表单
+</pre>
+<p>我们在每天早上 <time>9:00</time> 开始营业。</p>
+<p>我在 <time datetime="2016-02-14">情人节</time> 有个约会。</p>
+<!--<iframe src="http://www.baidu.com" width="200" height="200" frameborder="0">-->
+<!--    <p>您的浏览器不支持  iframe 标签。</p>-->
+<!--</iframe>-->
+<!--<h1>我的第一个标题</h1>-->
+<p>我的第一个段落。</p>
+<p>菜鸟教程，学的不仅是技术，更是梦想！！！</p>
+<input type="text" name="username">
+<input type="text" value="Default text">
+<input type="text" placeholder="Enter your name">
+<div id="time">加载中...</div>
+<p id="demo">点击按钮获取您当前坐标（可能需要比较长的时间获取）：</p>
+<button onclick="getLocation()">点我</button>
+<script>
+    var x=document.getElementById("demo");
+    function getLocation()
+    {
+        if (navigator.geolocation)
+        {
+            alert("111")
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }
+        else
+        {
+            alert("123123")
+            x.innerHTML="该浏览器不支持获取地理位置。";
+        }
+    }
+
+    function showPosition(position)
+    {
+        x.innerHTML="纬度: " + position.coords.latitude +
+            "<br>经度: " + position.coords.longitude;
+    }
+</script>
+</body>
+<script>
+    // JavaScript代码，用于在页面加载完成时设置时间
+    window.onload = function() {
+        // 获取div元素
+        document.getElementById('time').innerText =  new Date().toLocaleTimeString(); // 更新div的内容
+    };
+</script>
+</html>
